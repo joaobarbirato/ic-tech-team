@@ -1,14 +1,29 @@
-import Word
+import json
 
-class Bag:
-    def init(self):
-        #dictionary/JSON goes here
+class Bag(object):
+    #dictionary/JSON goes here
+    def __init__(self):
+        self.dictionary = {}
         pass
 
-    def addWord(self, Word):
-        #add a new word to database
+    #checks if a word is in the bag
+    def isInTheBag(self, string):
         pass
 
-    def setTimesWord(self, Word):
-        #+1 on existing word counter
+    #add a new word to database
+    def addWord(self, string):
+
+        pass
+
+    #+1 on existing word counter
+    def setTimesWord(self, string):
+        pass
+
+    #puts JSON into a file
+    def archiveJSON(self):
+        self.js = json.loads(dictionary)
+        pass
+
+
+    def __del__(self):
         pass
