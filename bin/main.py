@@ -1,12 +1,12 @@
 import sys
-sys.path.append('./source')
+sys.path.append('./../source')
 
 #call everything and do stuff
 import Bag
 
 bag = Bag.Bag()
 
-rawText = open("./instances/raw-text.txt", "rt")
+rawText = open("./../data/raw-text2.txt", "rt")
 words = rawText.read().split(' ')
 
 for w in words:
@@ -15,4 +15,4 @@ for w in words:
     else:
         bag.addWord(w)
 
-bag.archiveDictAsJSON("./data/raw-text-json.txt")
+bag.archiveDictAsJSON("./../data/raw-text-2-json.txt")
