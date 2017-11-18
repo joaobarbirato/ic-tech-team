@@ -3,12 +3,17 @@ import sys
 sys.path.append('./../source')
 
 from NoStopWords import NoStopWords
-#call everything and do stuff
 import Bag
+
+fileName = input()
+dataDir = sys.argv[1]
+targetDir = sys.argv[2]
+
+print(fileName)
 
 bag = Bag.Bag()
 
-rawText = open("./../data/raw-text2.txt", "rt")
+rawText = open(dataDir+"parsed-"+fileName, "rt")
 
 words = rawText.read()
 words = words.lower()
@@ -22,4 +27,4 @@ for w in words:
     else:
         bag.addWord(w)
 
-bag.archiveDictAsJSON("./../data/raw-text-2-json.txt")
+bag.archiveDictAsJSON(targetDir+"bag-"+fileName)

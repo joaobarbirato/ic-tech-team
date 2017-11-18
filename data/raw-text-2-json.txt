@@ -1,1 +1,0 @@
-"{\"ajuda\": 1, \"valeuuuuuuu\": 1, \"oi\": 1, \"bem\": 1, \"pode\": 1, \"responder\": 1, \"maquina\": 1, \"legal\": 1, \"to\": 2, \"conversar\": 1, \"tudo\": 1, \"hahahaha\": 1, \"enfim\": 1, \"esperando\": 1, \"problema\": 1, \"celular\": 1}"
